@@ -20,11 +20,55 @@
       <li><a href="#">Opcion 2</a></li>
       <li><a href="#">Opcion 3</a></li>
     </ul>
-  </nav>
-  
+  </nav>  
   <article>
     <h1>Titulo</h1>
-  </article>
+  
+    <div class="container">
+        <form action="/action_page.php">
+        <div class="row">
+        <div class="col-25">
+            <label for="fname">Nombre</label>
+        </div>
+        <div class="col-75">
+            <input type="text" id="fname" name="firstname" placeholder="Nombre">
+        </div>
+        </div>
+        <div class="row">
+        <div class="col-25">
+            <label for="lname">Apellido</label>
+        </div>
+        <div class="col-75">
+            <input type="text" id="lname" name="apellido" placeholder="Apellido">
+        </div>
+        </div>
+        <div class="row">
+        <div class="col-25">
+            <label for="paices">Paices</label>
+        </div>
+        <div class="col-75">
+            <select id="paices" name="paices">
+            <option value="argentina">Argentina</option>
+            <option value="chile">Chile</option>
+            <option value="uruguay">Uruguay</option>
+            </select>
+        </div>
+        </div>
+        <div class="row">
+        <div class="col-25">
+            <label for="subject">Asunto</label>
+        </div>
+        <div class="col-75">
+            <textarea id="subject" name="subject" placeholder="Escriba aquí" style="height:200px"></textarea>
+        </div>
+        </div>
+        <br>
+        <div class="row">
+        <input type="submit" value="Enviar">
+        </div>
+        </form>
+    </div>
+   </article>
 </section>
 
 <footer>
