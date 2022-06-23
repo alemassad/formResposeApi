@@ -4,75 +4,50 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
     <title>Document</title>
     <link rel="stylesheet" href="estilo.css">
+    
 </head>
 <body>
+    <main class="contenedor">
+        <div id="contenido1" hidden>
+            <h1>Resultado:</h1>
+            <h5 id="H5nombre">Nombre</h5>
+            <h5 id="H5apellido">Apellido</h5>
+            <h5 id="H5mail">Email</h5>
+            <h5 id="H5genero">Genero</h5>
+            <input type="submit" value="Cerrar" id="cerrar">
+        </div>
+        <div class="contenido2">
+            <form action="#" method="post" id="formulario">
+                <fieldset>
+                    <legend>Registrarse:</legend>
 
-<header>
-  <h2>Encabezado</h2>
-</header>
+                    <small id="errorNombre" class="errorNombre" hidden>Introducir un Nombre correcto</small>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre">
+                    
+                    <small id="errorApellido" class="errorApellido" hidden>Poner un Apellido correcto</small>
+                    <label for="apellido">Apellido:</label>
+                    <input type="text" id="apellido" name="apellido">
 
-<section>
-  <nav>
-    <ul>
-      <li><a href="#">Opcion 1</a></li>
-      <li><a href="#">Opcion 2</a></li>
-      <li><a href="#">Opcion 3</a></li>
-    </ul>
-  </nav>  
-  <article>
-    <h1>Titulo</h1>
-  
-    <div class="container">
-        <form action="/action_page.php">
-        <div class="row">
-        <div class="col-25">
-            <label for="fname">Nombre</label>
-        </div>
-        <div class="col-75">
-            <input type="text" id="fname" name="firstname" placeholder="Nombre">
-        </div>
-        </div>
-        <div class="row">
-        <div class="col-25">
-            <label for="lname">Apellido</label>
-        </div>
-        <div class="col-75">
-            <input type="text" id="lname" name="apellido" placeholder="Apellido">
-        </div>
-        </div>
-        <div class="row">
-        <div class="col-25">
-            <label for="paices">Paices</label>
-        </div>
-        <div class="col-75">
-            <select id="paices" name="paices">
-            <option value="argentina">Argentina</option>
-            <option value="chile">Chile</option>
-            <option value="uruguay">Uruguay</option>
-            </select>
-        </div>
-        </div>
-        <div class="row">
-        <div class="col-25">
-            <label for="subject">Asunto</label>
-        </div>
-        <div class="col-75">
-            <textarea id="subject" name="subject" placeholder="Escriba aquí" style="height:200px"></textarea>
-        </div>
-        </div>
-        <br>
-        <div class="row">
-        <input type="submit" value="Enviar">
-        </div>
+                    <small id="errorCorreo" class="errorCorreo" hidden>Introducir un Correo correcto</small>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email">
+                    
+                    <label for="genero">Género:</label>
+                    <select id="genero" name="genero">
+                        <option value="masculino">Masculino</option>
+                        <option value="femenino">Femenino</option>
+                        <option value="Otro">Otro</option>
+                    </select>
+                    
+                    <input type="submit" value="Enviar" id="enviar">
+                </fieldset>
         </form>
-    </div>
-   </article>
-</section>
-
-<footer>
-  <p>Pata</p>
-</footer>
+        </div>
+    </main>
+    <script src="app.js"></script>
 </body>
 </html>
