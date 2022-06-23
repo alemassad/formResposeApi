@@ -5,7 +5,7 @@
 .contenedor {
     display: flex;
     flex-direction: row;
-    font-size: 30px;
+    font-size: 20px;
     text-align: center;
   }
   
@@ -16,12 +16,10 @@
   }
   
 .contenido2 {
-    background-color: rgb(180, 213, 226);
+    background-color: rgb(180, 213, 226, 0.7);
     padding: 10px;
     flex: 50%;
   }
-  
-
 input, select {
     width: 100%;
     padding: 12px 20px;
@@ -45,6 +43,17 @@ input, select {
   input[type=submit]:hover {
     background-color: #6ce2b7;
   }  
+  .errorNombre, .errorApellido, .errorCorreo {
+    font-size: 15px;
+    text-align:initial;
+    color: red;
+  }  
+  .validoNombre, .validoApellido, .validoCorreo {
+    font-size: 15px;
+    text-align:initial;
+    color: rgb(13, 139, 13);
+  }
+
   @media (max-width: 600px) {
     .contenedor {
       flex-direction: column;
